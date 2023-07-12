@@ -1,24 +1,21 @@
-
-import React from 'react';
 import "./App.css";
-import { useCounter } from 'hooks';
-  
+import useCounter from "./hooks/useCounter";
+
 const App = () => {
-    const { value, increment, decrement, incrementBy, 
-        decrementBy, reset } = useCounter(1000);
+
+    const [count, handleIncrement, handleDecrement, handleReset] = useCounter()
+    const [count2, handlePlus, handleMinus, handleReset2] = useCounter(100, 5)
+
     return (
-        <div>
-            <p> Counter</p>
-            <p> <span>Current value </span>is {value}</p>
-            <button onClick={increment}>
-                Increment</button><br /><br />
-            <button onClick={decrement}>
-                Decrement</button><br /><br />
-            <button onClick={() => incrementBy(2)}>
-                Increase by 2</button><br /><br />
-            <button onClick={() => decrementBy(2)}>
-                Decrease by 2</button><br /><br />
-            <button onClick={reset}>reset</button>
+        <div className="app">
+            <h1>{count}</h1>
+            <button onClick={handleDecrement}>-1</button>
+            <button onClick={handleReset}>reset</button>
+            <button onClick={handleIncrement}>+1</button>
+            <h1>{count2}</h1>
+            <button onClick={handleMinus}>-5</button>
+            <button onClick={handleReset2}>reset</button>
+            <button onClick={handlePlus}>+5</button>
         </div>
     )
 }
