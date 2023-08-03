@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* ======= VARIABLES CSS ======== */
+
+:root { /* pseudoclase */
+
+  /* General colors */
+  --shadow-color: #00000026;
+  --overlay-color:hsla(0, 1%, 23%, 0.653); 
+
+  --background-button: #D93F3F;
+  --background-input: #FFFFFF;
+  --background-select: #FFFFFF;
+  --text-input: #737373;
+  --text-button: #FFFFFF;
+  --text-subtitle: #FE1936;
+  --text-paragraph: #302F2F;
+
+  --background-bar: #f6f6f6;
+  --background-per: linear-gradient(90deg, #FCD676 0%, #E6901E 100%);
+  --background-header-red: #dd1a1a;
+  --background-header-black: #0c0c0c;
+
+  /* Font size and typography */
+  --body-font: 'Roboto', sans-serif;
+  --size-large-big: 4rem;
+  --size-extra-big: 3rem;
+  --size-big: 2.5rem;
+  --size-large: 2rem;
+  --size-medium: 1.5rem;
+  --size-normal: 1.2rem;
+  --size-small: .8rem;
+  --size-tiny: .6rem;
+
+  /* Font weight */
+  --weight-thin: 100;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Margins, Paddings, gap and Borders */
+  --sp-0-05: .05em;
+  --sp-0-1: .1em;
+  --sp-0-125: .125em;
+  --sp-0-15: .15em;
+  --sp-0-2: .2em;
+  --sp-0-25: .25em;
+  --sp-0-3: .3em;
+  --sp-0-5: .5em;
+  --sp-0-75: .75em;
+  --sp-0-8: .8em;
+  --sp-1: 1em;
+  --sp-1-25: 1.25em;
+  --sp-1-5: 1.5em;
+  --sp-2: 2em;
+  --sp-2-5: 2.5em;
+  --sp-3: 3em;
+  --sp-3-5: 3.5em;
+  --sp-4: 4em;
+  --sp-4-5: 4.5em;
+  --sp-5: 5em;
+  --sp-6: 6em;
+  --sp-10: 10em;
+  --sp-20: 20em;
+
+  /* z-index */
+  --z-fixed: 1;
+  --z-modal: 2;
+
+  /* Pokemon type Colors */
+
+  --gradient-fire: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  --gradient-grass: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  --gradient-steel: linear-gradient(180deg, #5E736C 0%, #728881 23.44%, #A8A8A8 58.33%);
+  --gradient-water: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  --gradient-psychic: linear-gradient(180deg, #E52D2D 0%, #D13E3E 23.44%, #F07F7F 58.33%);
+  --gradient-ground: linear-gradient(180deg, #654008 0%, #895C1A 23.44%, #D69638 58.33%);
+  --gradient-ice: linear-gradient(179deg, #6FBEDF 0%, #64CBF5 23.44%, #BDEBFE 58.33%);
+  --gradient-flying: linear-gradient(179deg, #307d93 0%, #2f9dbc 27.25%, #3dc7ef 57.91%);
+  --gradient-ghost: linear-gradient(179deg, #323569 0%, #454AA8 27.25%, #787DDA 57.91%);
+  --gradient-normal: linear-gradient(181deg, #735259 24.28%, #BC6B7C 74.77%, #7C3F4C 100%);
+  --gradient-poison: linear-gradient(179deg, #5B3184 0%, #A564E3 32.66%, #CE9BFF 57.91%);
+  --gradient-rock: linear-gradient(179deg, #7E7E7E 0%, #8D8D94 27.25%, #D3D3D3 57.91%);
+  --gradient-fighting: linear-gradient(179deg, #96402A 0%, #F1613C 70.83%, #CB735D 100%);
+  --gradient-dark: linear-gradient(179deg, #030706 0%, #0D1211 27.25%, #5A5E5D 57.91%);
+  --gradient-bug: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+  --gradient-electric: linear-gradient(180deg, #cabb2e 0%, #e8d525 23.44%, #efb710 58.33%);
+  --gradient-fairy: linear-gradient(180deg, #971B45 0%, #C23867 23.44%, #CD7D98 58.33%);
+  --gradient-shadow: linear-gradient(180deg, #3c3646 0%, #534766 23.44%, #7b62a3 58.33%);
+  --gradient-unknow: linear-gradient(180deg, #392f2f 0%, #625c5c 23.44%, #757575 58.33%);
+  --gradient-dragon: linear-gradient(180deg, #478A93 0%, #56A4AE 23.44%, #A2BEC1 58.33%);
+  
+  --background-fire: #ff7402;
+  --background-grass: #85c9c5;
+  --background-steel: #9eb7b8;
+  --background-water: #4592c4;
+  --background-psychic: #f366b9;
+  --background-ground: #ab9842;
+  --background-ice: #51c4e7;
+  --background-flying: #3dc7ef;
+  --background-ghost: #4d5b64;
+  --background-normal: #a4acaf;
+  --background-poison: #6c3d9a;
+  --background-rock: #736f6f;
+  --background-fighting: #d56723;
+  --background-dark: #707070;
+  --background-bug: #729f3f;
+  --background-electric: #d5c428;
+  --background-fairy: #fdb9e9;
+  --background-shadow: #7b62a3;
+  --background-unknow: #757575;
+  --background-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  --background-weight: #bd3333ac;
+  --background-height: #0a202cae;
+  --background-experience: #da2bdd85;
+
+  --color-fire: #e75c35;
+  --color-grass: #416460;
+  --color-steel: #5e736c;
+  --color-water: #1479fb;
+  --color-psychic: #e52d2d;
+  --color-ground: #654008;
+  --color-ice: #6fbedf;
+  --color-flying: #316a7a;
+  --color-ghost: #323569;
+  --color-normal: #735259;
+  --color-poison: #5b3184;
+  --color-rock: #7e7e7e;
+  --color-fighting: #96402a;
+  --color-dark: #030706;
+  --color-bug: #4ab648;
+  --color-electric: #c4b212;
+  --color-fairy: #971b45;
+  --color-shadow: #473760;
+  --color-unknow: #525252;
+  --color-dragon: #478a93;
+  
+  --border-fire: #ce5f1a;
+  --border-grass: #b1dbbc;
+  --border-steel: #728881;
+  --border-water: #83b9ff;
+  --border-psychic: #d13e3e;
+  --border-ground: #895c1a;
+  --border-ice: #bdebfe;
+  --border-flying: #38abdc;
+  --border-ghost: #323569;
+  --border-normal: #4d3439;
+  --border-poison: #5b3184;
+  --border-rock: #6b6a6a;
+  --border-fighting: #96402a;
+  --border-dark: #0b0e0d;
+  --border-bug: #59c13f;
+  --border-electric: #d6a820;
+  --border-fairy: #c23867;
+  --border-shadow: #4b0dae;
+  --border-unknow: #827878;
+  --border-dragon: #56a4ae;
+  
+}
+
+/* --- RESET --- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+input {
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
