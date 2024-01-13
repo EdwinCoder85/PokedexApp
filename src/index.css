@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* ======= VARIABLES CSS ======== */
+
+:root {
+  /* pseudoclase */
+
+  /* General colors */
+  --shadow-color: #00000026;
+  --overlay-color: hsla(0, 1%, 23%, 0.653);
+
+  --background-button: #d93f3f;
+  --background-input: #ffffff;
+  --background-select: #ffffff;
+  --text-input: #737373;
+  --text-button: #ffffff;
+  --text-subtitle: #fe1936;
+  --text-paragraph: #302f2f;
+
+  --background-bar: #f6f6f6;
+  --background-per: linear-gradient(90deg, #fcd676 0%, #e6901e 100%);
+  --background-header-red: #dd1a1a;
+  --background-header-black: #0c0c0c;
+  --main-color: #dd1a1a;
+
+  /* Font size and typography */
+  --body-font: "Roboto", sans-serif;
+  --size-large-big: 4rem;
+  --size-extra-big: 3rem;
+  --size-big: 2.5rem;
+  --size-large: 2rem;
+  --size-medium: 1.5rem;
+  --size-normal: 1rem;
+  --size-small: 0.8rem;
+  --size-tiny: 0.6rem;
+
+  /* Font weight */
+  --weight-thin: 100;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Margins, Paddings, gap and Borders */
+  --sp-0-05: 0.05em;
+  --sp-0-1: 0.1em;
+  --sp-0-125: 0.125em;
+  --sp-0-15: 0.15em;
+  --sp-0-2: 0.2em;
+  --sp-0-25: 0.25em;
+  --sp-0-3: 0.3em;
+  --sp-0-5: 0.5em;
+  --sp-0-75: 0.75em;
+  --sp-0-8: 0.8em;
+  --sp-1: 1em;
+  --sp-1-25: 1.25em;
+  --sp-1-5: 1.5em;
+  --sp-2: 2em;
+  --sp-2-5: 2.5em;
+  --sp-3: 3em;
+  --sp-3-5: 3.5em;
+  --sp-4: 4em;
+  --sp-4-5: 4.5em;
+  --sp-5: 5em;
+  --sp-6: 6em;
+  --sp-7: 7em;
+  --sp-8: 8em;
+  --sp-9: 9em;
+  --sp-10: 10em;
+  --sp-11: 11em;
+  --sp-12: 12em;
+  --sp-13: 13em;
+  --sp-14: 14em;
+  --sp-15: 15em;
+  --sp-16: 16em;
+  --sp-17: 17em;
+  --sp-18: 18em;
+  --sp-19: 19em;
+  --sp-20: 20em;
+  --sp-22: 22em;
+  --sp-25: 25em;
+  --sp-30: 30em;
+  --sp-40: 40em;
+
+  /* z-index */
+  --z-back: -1;
+  --z-fixed: 1;
+  --z-modal: 2;
+
+  /* Pokemon type Colors */
+
+  --gradient-fire: linear-gradient(
+    176.37deg,
+    #f96d6f -32.26%,
+    #e35825 22.55%,
+    #e8ae1b 125.72%
+  );
+  --gradient-grass: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
+  --gradient-steel: linear-gradient(
+    180deg,
+    #5e736c 0%,
+    #728881 23.44%,
+    #a8a8a8 58.33%
+  );
+  --gradient-water: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
+  --gradient-psychic: linear-gradient(
+    180deg,
+    #e52d2d 0%,
+    #d13e3e 23.44%,
+    #f07f7f 58.33%
+  );
+  --gradient-ground: linear-gradient(
+    180deg,
+    #654008 0%,
+    #895c1a 23.44%,
+    #d69638 58.33%
+  );
+  --gradient-ice: linear-gradient(
+    179deg,
+    #6fbedf 0%,
+    #64cbf5 23.44%,
+    #bdebfe 58.33%
+  );
+  --gradient-flying: linear-gradient(
+    179deg,
+    #307d93 0%,
+    #2f9dbc 27.25%,
+    #3dc7ef 57.91%
+  );
+  --gradient-ghost: linear-gradient(
+    179deg,
+    #323569 0%,
+    #454aa8 27.25%,
+    #787dda 57.91%
+  );
+  --gradient-normal: linear-gradient(
+    181deg,
+    #735259 24.28%,
+    #bc6b7c 74.77%,
+    #7c3f4c 100%
+  );
+  --gradient-poison: linear-gradient(
+    179deg,
+    #5b3184 0%,
+    #a564e3 32.66%,
+    #ce9bff 57.91%
+  );
+  --gradient-rock: linear-gradient(
+    179deg,
+    #7e7e7e 0%,
+    #8d8d94 27.25%,
+    #d3d3d3 57.91%
+  );
+  --gradient-fighting: linear-gradient(
+    179deg,
+    #96402a 0%,
+    #f1613c 70.83%,
+    #cb735d 100%
+  );
+  --gradient-dark: linear-gradient(
+    179deg,
+    #030706 0%,
+    #0d1211 27.25%,
+    #5a5e5d 57.91%
+  );
+  --gradient-bug: linear-gradient(
+    177.56deg,
+    #62db60 -58.92%,
+    #3bb039 16.57%,
+    #aaffa8 209.53%
+  );
+  --gradient-electric: linear-gradient(
+    180deg,
+    #cabb2e 0%,
+    #e8d525 23.44%,
+    #efb710 58.33%
+  );
+  --gradient-fairy: linear-gradient(
+    180deg,
+    #971b45 0%,
+    #c23867 23.44%,
+    #cd7d98 58.33%
+  );
+  --gradient-shadow: linear-gradient(
+    180deg,
+    #3c3646 0%,
+    #534766 23.44%,
+    #7b62a3 58.33%
+  );
+  --gradient-unknow: linear-gradient(
+    180deg,
+    #392f2f 0%,
+    #625c5c 23.44%,
+    #757575 58.33%
+  );
+  --gradient-dragon: linear-gradient(
+    180deg,
+    #478a93 0%,
+    #56a4ae 23.44%,
+    #a2bec1 58.33%
+  );
+
+  --background-fire: #ff7402;
+  --background-grass: #85c9c5;
+  --background-steel: #9eb7b8;
+  --background-water: #4592c4;
+  --background-psychic: #f366b9;
+  --background-ground: #ab9842;
+  --background-ice: #51c4e7;
+  --background-flying: #3dc7ef;
+  --background-ghost: #4d5b64;
+  --background-normal: #a4acaf;
+  --background-poison: #6c3d9a;
+  --background-rock: #736f6f;
+  --background-fighting: #d56723;
+  --background-dark: #707070;
+  --background-bug: #729f3f;
+  --background-electric: #d5c428;
+  --background-fairy: #fdb9e9;
+  --background-shadow: #7b62a3;
+  --background-unknow: #757575;
+  --background-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  --background-weight: #bd3333ac;
+  --background-height: #0a202cae;
+  --background-experience: #da2bdd85;
+
+  --color-fire: #e75c35;
+  --color-grass: #416460;
+  --color-steel: #5e736c;
+  --color-water: #1479fb;
+  --color-psychic: #e52d2d;
+  --color-ground: #654008;
+  --color-ice: #6fbedf;
+  --color-flying: #316a7a;
+  --color-ghost: #323569;
+  --color-normal: #735259;
+  --color-poison: #5b3184;
+  --color-rock: #7e7e7e;
+  --color-fighting: #96402a;
+  --color-dark: #030706;
+  --color-bug: #4ab648;
+  --color-electric: #c4b212;
+  --color-fairy: #971b45;
+  --color-shadow: #473760;
+  --color-unknow: #525252;
+  --color-dragon: #478a93;
+
+  --border-fire: #ce5f1a;
+  --border-grass: #b1dbbc;
+  --border-steel: #728881;
+  --border-water: #83b9ff;
+  --border-psychic: #d13e3e;
+  --border-ground: #895c1a;
+  --border-ice: #bdebfe;
+  --border-flying: #38abdc;
+  --border-ghost: #323569;
+  --border-normal: #4d3439;
+  --border-poison: #5b3184;
+  --border-rock: #6b6a6a;
+  --border-fighting: #96402a;
+  --border-dark: #0b0e0d;
+  --border-bug: #59c13f;
+  --border-electric: #d6a820;
+  --border-fairy: #c23867;
+  --border-shadow: #4b0dae;
+  --border-unknow: #827878;
+  --border-dragon: #56a4ae;
+
+
+  --filter--grass: drop-shadow(-4px -17px 40px #48bfab) drop-shadow(0 0 20px#1dffc685);
+	--filter--bug: drop-shadow(-4px -17px 40px rgba(215, 235, 35, 0.7)) drop-shadow(0 0 20px rgba(216, 224, 72, 0.7));
+	--filter--water: drop-shadow(-4px -17px 40px rgba(10, 181, 255, 0.7)) drop-shadow(0 0 20px rgb(0, 225, 255));
+	--filter--fire: drop-shadow(-4px -17px 50px rgba(255, 60, 0, 0.747)) drop-shadow(0 0 20px rgba(255, 255, 0, 0.979));
+	--filter--dark: drop-shadow(-4px -17px 40px #beabc7) drop-shadow(0 0 20px rgba(20, 20, 20, 0.7));
+	--filter--normal: drop-shadow(-4px -17px 40px rgba(206, 165, 159, 0.897)) drop-shadow(0 0 20px rgba(98, 98, 98, 0.7));
+	--filter--fighting: drop-shadow(-4px -17px 40px rgba(146, 74, 6, 0.7)) drop-shadow(0 0 20px rgba(0, 162, 255, 0.7));
+	--filter--flying: drop-shadow(-4px -17px 40px rgba(237, 244, 247, 0.7)) drop-shadow(0 0 20px rgba(0, 162, 255, 0.7));
+	--filter--poison: drop-shadow(-4px -17px 40px rgba(144, 73, 240, 0.866)) drop-shadow(0 0 20px rgba(216, 196, 262, 0.9));
+	--filter--ground: drop-shadow(-4px -17px 40px rgba(173, 119, 0, 0.7)) drop-shadow(0 0 20px rgba(230, 154, 0, 0.7));
+	--filter--rock: drop-shadow(-4px -17px 40px rgba(150, 136, 103, 0.7)) drop-shadow(0 0 20px rgba(179, 161, 121, 0.7));
+	--filter--ghost: drop-shadow(-4px -17px 40px rgba(228, 220, 240, 0.7)) drop-shadow(0 0 20px rgba(45, 4, 248, 0.7));
+	--filter--steel: drop-shadow(-4px -17px 40px rgba(133, 147, 162, 0.7)) drop-shadow(0 0 20px rgba(76, 171, 255, 0.7));
+	--filter--electric: drop-shadow(-4px -17px 40px rgba(255, 216, 77, 0.7)) drop-shadow(0 0 50px rgba(255, 230, 0, 0.7));
+	--filter--psychic: drop-shadow(-4px -17px 40px rgba(239, 227, 255, 0.7)) drop-shadow(0 0 20px rgba(231, 231, 231, 0.7));
+	--filter--ice: drop-shadow(-4px -17px 40px rgba(30, 197, 248, 0.7)) drop-shadow(0 0 10px rgba(88, 172, 250, 0.7));
+	--filter--dragon: drop-shadow(-4px -17px 40px rgba(0, 247, 255, 0.7)) drop-shadow(0 0 10px rgba(252, 252, 252, 0.7));
+	--filter--fairy: drop-shadow(-4px -17px 40px rgba(255, 156, 224, 0.7)) drop-shadow(0 0 20px rgba(236, 236, 236, 0.7));
+}
+
+/* --- RESET --- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+input {
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}

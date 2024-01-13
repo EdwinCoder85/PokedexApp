@@ -1,0 +1,26 @@
+.principal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+  background: #e62e1b;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loading-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal-container {
+  min-height: 100vh;
+  position: relative;
+  user-select: none;
+}
