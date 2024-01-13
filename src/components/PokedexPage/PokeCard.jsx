@@ -22,7 +22,11 @@ const PokeCard = ({ url }) => {
     <article className={`pokecard ${firstType}-border`} onClick={handleClick}>
       <header className={`pokecard__header ${firstType}-gradient`}>
         <img
+<<<<<<< HEAD
           className={`pokecard__image shadow-${firstType}`}
+=======
+          className="pokecard__image"
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
           src={pokemon?.sprites.other["official-artwork"].front_default}
           alt=""
         />
@@ -31,7 +35,11 @@ const PokeCard = ({ url }) => {
         <h3 className={`pokecard__name ${firstType}-color`}>{pokemon?.name}</h3>
         <ul className="pokecard__types">
           {pokemon?.types.map((typeInfo) => (
+<<<<<<< HEAD
             <li className={`pokecard__typename ${typeInfo.type.name}-background`} key={typeInfo.type.url}>
+=======
+            <li className="pokecard__typename" key={typeInfo.type.url}>
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
               {typeInfo.type.name}
             </li>
           ))}

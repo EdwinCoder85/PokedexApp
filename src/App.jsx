@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import PokedexPage from "./pages/PokedexPage";
@@ -74,3 +75,30 @@ function App() {
 }
 
 export default App;
+=======
+import './App.css'
+import HomePage from './pages/HomePage'
+import PokedexPage from './pages/PokedexPage'
+import PokeIdPage from './pages/PokeIdPage'
+import Page404 from './pages/Page404'
+import { Routes, Route } from 'react-router-dom'
+import ProtectedRoutes from './pages/ProtectedRoutes'
+
+function App() {
+
+  return (
+    <div className="principal-container">
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route element={<ProtectedRoutes />}>
+          <Route path='/pokedex' element={<PokedexPage />} />
+          <Route path='/pokedex/:id' element={<PokeIdPage />} />
+        </Route>
+        <Route path='*' element={<Page404 />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65

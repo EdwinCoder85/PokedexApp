@@ -8,18 +8,33 @@ import logo from "../assets/img/logo2.svg";
 import icon from "../assets/img/icon2.svg";
 import SelectType from "../components/PokedexPage/SelectType";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import SelectCardByPage from "../components/PokedexPage/SelectCardByPage";
+=======
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 
 const PokedexPage = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("allPokemons");
+<<<<<<< HEAD
   const [showCardsByPage, setShowCardsByPage] = useState(8);
   const [currentPage, setCurrentPage] = useState(1);
+=======
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pokemonsPerPage] = useState(12);
+
+  const indexOfLastItem = currentPage * pokemonsPerPage;
+  const indexOfFirstItem = indexOfLastItem - pokemonsPerPage;
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 
   const trainer = useSelector((reducer) => reducer.trainer);
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1304";
+=======
+  const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1281";
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   const [pokemons, getAllPokemons, getPokemonsByType] = useFetch(url);
 
   useEffect(() => {
@@ -28,6 +43,7 @@ const PokedexPage = () => {
     } else {
       getPokemonsByType(selectValue);
     }
+<<<<<<< HEAD
   }, [selectValue, showCardsByPage, inputValue ]);
 
   const pokemonsPerPage = showCardsByPage;
@@ -38,6 +54,12 @@ const PokedexPage = () => {
   let shortRoutePokemons;
   let shortRouteCount;
 
+=======
+  }, [selectValue]);
+
+  let shortRoutePokemons;
+  let shortRouteCount;
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   const route = () => {
     if (pokemons?.count) {
       shortRoutePokemons = pokemons?.results;
@@ -47,6 +69,7 @@ const PokedexPage = () => {
       shortRouteCount = pokemons?.results.length;
     }
   };
+<<<<<<< HEAD
 
   route();
 
@@ -65,15 +88,24 @@ const PokedexPage = () => {
   const result = shortRoutePokemons?.filter(cbFilter);
   const totalPages = Math.ceil(shortRouteCount / pokemonsPerPage);
 
+=======
+  route();
+
+  const totalPages = Math.ceil(shortRouteCount / pokemonsPerPage);
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   let pokemonsToShow = shortRoutePokemons?.slice(
     indexOfFirstItem,
     indexOfLastItem
   );
 
   if (inputValue) {
+<<<<<<< HEAD
     pokemonsToShow = result?.slice(
       indexOfFirstItem,
       indexOfLastItem)
+=======
+    pokemonsToShow = shortRoutePokemons
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   }
 
   const pages = [];
@@ -82,6 +114,7 @@ const PokedexPage = () => {
   }
 
   let acces;
+<<<<<<< HEAD
 
   const selectAcces = () => {
     if (totalPages > 10) {
@@ -98,10 +131,38 @@ const PokedexPage = () => {
       }
     } else {
       // Si hay 10 o menos páginas
+=======
+  const selectAcces = () => {
+    if (totalPages > 10) {
+      if (currentPage > totalPages - 5) {
+        acces = pages.slice(totalPages - 10, totalPages);
+      } else if (currentPage > 5) {
+        acces = pages.slice(currentPage - 5, currentPage + 5);
+      } else {
+        acces = pages.slice(0, 10);
+      }
+    } else {
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
       acces = pages.slice(0, totalPages);
     }
   };
   selectAcces();
+<<<<<<< HEAD
+=======
+
+  const inputSearch = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setInputValue(inputSearch.current.value.trim().toLowerCase());
+    setSelectValue("allPokemons");
+    inputSearch.current.value = "";
+    setCurrentPage(1)
+  };
+
+  const cbFilter = (poke) => poke.name.includes(inputValue);
+
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   return (
     <>
       <header className="pokedexpage__header">
@@ -132,7 +193,11 @@ const PokedexPage = () => {
             />
             <button className="pokedexpage__button">Search</button>
           </form>
+<<<<<<< HEAD
           <div className="pokedexpage__selectCardByType">
+=======
+          <div className="pokedexpage__select">
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
             <SelectType
               setSelectValue={setSelectValue}
               setInputValue={setInputValue}
@@ -142,6 +207,7 @@ const PokedexPage = () => {
           </div>
         </article>
       </section>
+<<<<<<< HEAD
       <section className="pokedexpage__pagination">
         {!inputValue && pokemonsToShow?.length > 0 && (
           <>
@@ -252,6 +318,26 @@ const PokedexPage = () => {
           </>
         )} 
       </section>
+=======
+      <section className="pokedexpage__gallery">
+        {pokemonsToShow?.filter(cbFilter).map((poke) => (
+          <PokeCard key={poke.url} url={poke.url} />
+        ))}
+      </section>
+      <footer className="pokedexpage__pagination">
+      {
+        inputValue ?
+        (<></>) : 
+        pokemonsToShow?.length  === 0 ?
+        (<></>) :
+        (<Pagination
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+          pages={acces}
+        />)
+      }
+      </footer>
+>>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
     </>
   );
 };
