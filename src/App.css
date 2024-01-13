@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .principal-loading {
   display: flex;
   align-items: center;
@@ -25,8 +24,3 @@
   position: relative;
   user-select: none;
 }
-=======
-select {
-    font-size: 1.5rem;
-}
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65

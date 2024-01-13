@@ -1,20 +1,13 @@
 .pokecard {
-<<<<<<< HEAD
   width: 110%;
-=======
-  width: 100%;
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   max-width: 350px;
   border-radius: var(--sp-0-75);
   border: var(--sp-0-75) solid #ccc;
   cursor: pointer;
   transition: transform 150ms ease;
-<<<<<<< HEAD
   z-index: 2;
   background: #fff;
   transition: perspective 0.5s, scale 0.5s, box-shadow 0.5s;
-=======
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 }
 .pokecard:hover {
   transform: scale(1.03);
@@ -24,10 +17,6 @@
   aspect-ratio: 2;
   position: relative;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 .pokecard__image {
   position: absolute;
   width: 60%;
@@ -35,14 +24,9 @@
   transform: translateX(-50%);
   top: var(--sp-1-5);
 }
-<<<<<<< HEAD
-
 .pokecard:hover .pokecard__image {
   filter: brightness(1.2);
 }
-
-=======
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 .pokecard__body {
   padding: var(--sp-3-5) var(--sp-1) var(--sp-2);
 }
@@ -60,18 +44,10 @@
   margin-bottom: var(--sp-1);
 }
 .pokecard__typename {
-<<<<<<< HEAD
   color: white;
   text-transform: capitalize;
   padding: var(--sp-0-5);
   border-radius: 5px;
-=======
-  text-transform: capitalize;
-}
-.pokecard__typename:nth-child(2)::before {
-  content: '/';
-  padding-right: var(--sp-0-75);
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 }
 .pokecard__hr {
   margin-bottom: var(--sp-1);
@@ -79,11 +55,7 @@
 }
 .pokecard__stats {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(3, auto);
-=======
-  grid-template-columns: repeat(3, 1fr);
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   justify-items: center;
   gap: var(--sp-1-5) var(--sp-0-2);
 }
@@ -94,20 +66,12 @@
 }
 .pokecard__stat__name {
   font-size: var(--size-small);
-<<<<<<< HEAD
   font-weight: var(--weight-black);
-=======
-  font-weight: var(--weight-light);
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   text-transform: uppercase;
   color: #9F9F9F;
 }
 .pokeccard__stat__value {
-<<<<<<< HEAD
   font-weight: var(--weight-black);
-=======
-  font-weight: var(--weight-medium);
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   font-size: var(--size-normal);
 }
 
@@ -354,7 +318,6 @@
 }
 .unknow-background {
   background-color: var(--background-unknow);
-<<<<<<< HEAD
 }
 
 .shadow-grass {
@@ -428,6 +391,4 @@
   .pokecard {
     max-width: 350px;
   }
-=======
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 }

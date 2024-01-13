@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 /* ======= VARIABLES CSS ======== */
@@ -26,47 +25,15 @@
 
   /* Font size and typography */
   --body-font: "Roboto", sans-serif;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-/* ======= VARIABLES CSS ======== */
-
-:root { /* pseudoclase */
-
-  /* General colors */
-  --shadow-color: #00000026;
-  --overlay-color:hsla(0, 1%, 23%, 0.653); 
-
-  --background-button: #D93F3F;
-  --background-input: #FFFFFF;
-  --background-select: #FFFFFF;
-  --text-input: #737373;
-  --text-button: #FFFFFF;
-  --text-subtitle: #FE1936;
-  --text-paragraph: #302F2F;
-
-  --background-bar: #f6f6f6;
-  --background-per: linear-gradient(90deg, #FCD676 0%, #E6901E 100%);
-  --background-header-red: #dd1a1a;
-  --background-header-black: #0c0c0c;
-
-  /* Font size and typography */
-  --body-font: 'Roboto', sans-serif;
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   --size-large-big: 4rem;
   --size-extra-big: 3rem;
   --size-big: 2.5rem;
   --size-large: 2rem;
   --size-medium: 1.5rem;
-<<<<<<< HEAD
   --size-normal: 1rem;
   --size-small: 0.8rem;
   --size-tiny: 0.6rem;
-=======
-  --size-normal: 1.2rem;
-  --size-small: .8rem;
-  --size-tiny: .6rem;
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 
   /* Font weight */
   --weight-thin: 100;
@@ -77,7 +44,6 @@
   --weight-black: 900;
 
   /* Margins, Paddings, gap and Borders */
-<<<<<<< HEAD
   --sp-0-05: 0.05em;
   --sp-0-1: 0.1em;
   --sp-0-125: 0.125em;
@@ -88,18 +54,6 @@
   --sp-0-5: 0.5em;
   --sp-0-75: 0.75em;
   --sp-0-8: 0.8em;
-=======
-  --sp-0-05: .05em;
-  --sp-0-1: .1em;
-  --sp-0-125: .125em;
-  --sp-0-15: .15em;
-  --sp-0-2: .2em;
-  --sp-0-25: .25em;
-  --sp-0-3: .3em;
-  --sp-0-5: .5em;
-  --sp-0-75: .75em;
-  --sp-0-8: .8em;
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   --sp-1: 1em;
   --sp-1-25: 1.25em;
   --sp-1-5: 1.5em;
@@ -111,7 +65,6 @@
   --sp-4-5: 4.5em;
   --sp-5: 5em;
   --sp-6: 6em;
-<<<<<<< HEAD
   --sp-7: 7em;
   --sp-8: 8em;
   --sp-9: 9em;
@@ -133,18 +86,11 @@
 
   /* z-index */
   --z-back: -1;
-=======
-  --sp-10: 10em;
-  --sp-20: 20em;
-
-  /* z-index */
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   --z-fixed: 1;
   --z-modal: 2;
 
   /* Pokemon type Colors */
 
-<<<<<<< HEAD
   --gradient-fire: linear-gradient(
     176.37deg,
     #f96d6f -32.26%,
@@ -266,29 +212,6 @@
     #a2bec1 58.33%
   );
 
-=======
-  --gradient-fire: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
-  --gradient-grass: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
-  --gradient-steel: linear-gradient(180deg, #5E736C 0%, #728881 23.44%, #A8A8A8 58.33%);
-  --gradient-water: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
-  --gradient-psychic: linear-gradient(180deg, #E52D2D 0%, #D13E3E 23.44%, #F07F7F 58.33%);
-  --gradient-ground: linear-gradient(180deg, #654008 0%, #895C1A 23.44%, #D69638 58.33%);
-  --gradient-ice: linear-gradient(179deg, #6FBEDF 0%, #64CBF5 23.44%, #BDEBFE 58.33%);
-  --gradient-flying: linear-gradient(179deg, #307d93 0%, #2f9dbc 27.25%, #3dc7ef 57.91%);
-  --gradient-ghost: linear-gradient(179deg, #323569 0%, #454AA8 27.25%, #787DDA 57.91%);
-  --gradient-normal: linear-gradient(181deg, #735259 24.28%, #BC6B7C 74.77%, #7C3F4C 100%);
-  --gradient-poison: linear-gradient(179deg, #5B3184 0%, #A564E3 32.66%, #CE9BFF 57.91%);
-  --gradient-rock: linear-gradient(179deg, #7E7E7E 0%, #8D8D94 27.25%, #D3D3D3 57.91%);
-  --gradient-fighting: linear-gradient(179deg, #96402A 0%, #F1613C 70.83%, #CB735D 100%);
-  --gradient-dark: linear-gradient(179deg, #030706 0%, #0D1211 27.25%, #5A5E5D 57.91%);
-  --gradient-bug: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
-  --gradient-electric: linear-gradient(180deg, #cabb2e 0%, #e8d525 23.44%, #efb710 58.33%);
-  --gradient-fairy: linear-gradient(180deg, #971B45 0%, #C23867 23.44%, #CD7D98 58.33%);
-  --gradient-shadow: linear-gradient(180deg, #3c3646 0%, #534766 23.44%, #7b62a3 58.33%);
-  --gradient-unknow: linear-gradient(180deg, #392f2f 0%, #625c5c 23.44%, #757575 58.33%);
-  --gradient-dragon: linear-gradient(180deg, #478A93 0%, #56A4AE 23.44%, #A2BEC1 58.33%);
-  
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   --background-fire: #ff7402;
   --background-grass: #85c9c5;
   --background-steel: #9eb7b8;
@@ -333,11 +256,7 @@
   --color-shadow: #473760;
   --color-unknow: #525252;
   --color-dragon: #478a93;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
   --border-fire: #ce5f1a;
   --border-grass: #b1dbbc;
   --border-steel: #728881;
@@ -358,8 +277,6 @@
   --border-shadow: #4b0dae;
   --border-unknow: #827878;
   --border-dragon: #56a4ae;
-<<<<<<< HEAD
-
 
   --filter--grass: drop-shadow(-4px -17px 40px #48bfab) drop-shadow(0 0 20px#1dffc685);
 	--filter--bug: drop-shadow(-4px -17px 40px rgba(215, 235, 35, 0.7)) drop-shadow(0 0 20px rgba(216, 224, 72, 0.7));
@@ -379,9 +296,6 @@
 	--filter--ice: drop-shadow(-4px -17px 40px rgba(30, 197, 248, 0.7)) drop-shadow(0 0 10px rgba(88, 172, 250, 0.7));
 	--filter--dragon: drop-shadow(-4px -17px 40px rgba(0, 247, 255, 0.7)) drop-shadow(0 0 10px rgba(252, 252, 252, 0.7));
 	--filter--fairy: drop-shadow(-4px -17px 40px rgba(255, 156, 224, 0.7)) drop-shadow(0 0 20px rgba(236, 236, 236, 0.7));
-=======
-  
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 }
 
 /* --- RESET --- */
@@ -389,18 +303,11 @@
   box-sizing: border-box;
 }
 html {
-<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-=======
-  font-family: 'Roboto', sans-serif;
-}
-body {
-  margin: 0;
->>>>>>> fb4341258d7c17d4d9ab02d31a137773350b7a65
 }
 h1,
 h2,
