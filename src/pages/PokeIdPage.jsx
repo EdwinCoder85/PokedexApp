@@ -36,7 +36,7 @@ const PokeIdPage = () => {
         <section className="pokedexidpage__main__top">
           <article className={`pokedexidpage__main-header ${firstType}-gradient`}>
             <img
-              className="pokedexidpage__image"
+              className={`pokedexidpage__image shadow-${firstType}`}
               src={pokemon?.sprites.other["official-artwork"].front_default}
               alt=""
             />

@@ -23,6 +23,7 @@
   --background-header-black: #0c0c0c;
   --main-color: #dd1a1a;
 
+
   /* Font size and typography */
   --body-font: "Roboto", sans-serif;
 
@@ -308,6 +309,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-image: url('./assets/img/wallpaper2.png');
+
 }
 h1,
 h2,

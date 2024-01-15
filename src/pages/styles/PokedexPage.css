@@ -61,12 +61,15 @@
 .pokedexpage__form {
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 10px 0px var(--shadow-color);
 }
 .pokedexpage__input {
   width: 155px;
   font-size: 1rem;
   padding-left: var(--sp-0-5);
+}
+.pokedexpage__input:hover{
+	background: #f6f6f6;
 }
 .pokedexpage__button {
   background-color: var(--main-color);
@@ -78,6 +81,7 @@
 .pokedexpage__selectCardByType {
   width: 215px;
   font-size: 1rem;
+  box-shadow: 0px 3px 10px 0px var(--shadow-color);
 }
 .pokedexpage__gallery {
   margin: 0 auto;
@@ -95,7 +99,6 @@
   flex-wrap: wrap;
   align-items: center;
   gap: var(--sp-0-5);
-  /* justify-content: space-between; */
   justify-content: center;
   user-select: none;
 }
@@ -205,6 +208,7 @@
     display: block;
     width: 220px;
     font-size: 1rem;
+    box-shadow: 0px 3px 10px 0px var(--shadow-color);
   }
 }
 
@@ -364,6 +368,7 @@
 
 @media screen and (min-width: 1536px) {
   .pokedexpage__images {
+    width: 100%;
     max-width: 1536px;
   }
   .pokedexpage__icon {

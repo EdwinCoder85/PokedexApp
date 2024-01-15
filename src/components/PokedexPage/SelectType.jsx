@@ -6,6 +6,8 @@ const SelectType = ({ setSelectValue, setInputValue, selectValue, setCurrentPage
   const url = "https://pokeapi.co/api/v2/type";
   const [types, getAllTypes] = useFetch(url);
 
+  console.log(types)
+
   useEffect(() => {
     getAllTypes();
   }, []);

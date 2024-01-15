@@ -10,7 +10,6 @@ import SelectType from "../components/PokedexPage/SelectType";
 import { useNavigate } from "react-router-dom";
 import SelectCardByPage from "../components/PokedexPage/SelectCardByPage";
 
-
 const PokedexPage = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("allPokemons");
@@ -212,7 +211,7 @@ const PokedexPage = () => {
         )}
       </section>
       <section className="pokedexpage__pagination">
-      {!inputValue && pokemonsToShow?.length > 0 && (
+        {!inputValue && pokemonsToShow?.length > 0 && (
           <>
             <Pagination
               setCurrentPage={setCurrentPage}
@@ -253,7 +252,7 @@ const PokedexPage = () => {
               {`${shortRouteCount} pokemons`}
             </p>
           </>
-        )} 
+        )}
       </section>
     </>
   );

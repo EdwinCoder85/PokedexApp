@@ -41,6 +41,28 @@
 .selectType__select::-ms-expand {
   display: none;
 }
+::-webkit-scrollbar {
+  width: 1.2rem;
+  background: hsl(0, 0%, 74%);
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd1a1a;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #dd1a1a;
+}
+
+.content-select select:hover{
+	background: #f6f6f6;
+}
+
 
 @media screen and (min-width: 640px) {
   .selectType__select {

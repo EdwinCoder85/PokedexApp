@@ -1,4 +1,3 @@
-
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import PokedexPage from "./pages/PokedexPage";
@@ -8,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import ProtectedRoutes from "./pages/ProtectedRoutes";
 import Lottie from "lottie-react";
 import pokebola from "./pokebola5.json";
+// import bar from "./bar.json";
+import bar from "./worm.json";
 import { useEffect, useState } from "react";
 
 // Componente del Loader
@@ -17,8 +18,16 @@ const Loader = () => (
       loop={true}
       animationData={pokebola}
       style={{
-        width: "10%",
-        height: "10%",
+        width: "40%",
+        height: "40%",
+      }}
+    />
+    <Lottie
+      loop={true}
+      animationData={bar}
+      style={{
+        width: "40%",
+        height: "40%",
       }}
     />
   </div>
@@ -39,21 +48,7 @@ function App() {
     <>
       {isLoading ? (
         <div className="principal-loading">
-          <div className="loading-animation">
-            <Lottie
-              loop={true}
-              animationData={pokebola}
-              style={{
-                width: "40%",
-                height: "40%",
-              }}
-            />
-            <span
-              style={{ color: "white", fontWeight: "bold", fontSize: "1.5rem" }}
-            >
-              Loading...
-            </span>
-          </div>
+          {Loader()}
         </div>
       ) : (
         <div className="principal-container">

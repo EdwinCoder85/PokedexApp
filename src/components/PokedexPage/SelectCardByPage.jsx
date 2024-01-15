@@ -4,7 +4,6 @@ import "./styles/SelectType.css";
 const SelectCardByPage = ({
   setShowCardsByPage,
   showCardsByPage,
-  setInputValue,
   setCurrentPage,
 }) => {
   const cards = [
@@ -33,7 +32,6 @@ const SelectCardByPage = ({
   const handleChange = (e) => {
     setShowCardsByPage(e.target.value);
     setCurrentPage(1);
-    // setInputValue("");
   };
 
   

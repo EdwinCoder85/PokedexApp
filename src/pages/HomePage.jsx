@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { setTrainerG } from "../store/slices/trainer.slice";
 import { useNavigate } from "react-router-dom";
 import "./styles/HomePage.css";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo2.svg";
 import icon from "../assets/img/icon.svg";
 import ash from "../assets/img/ash.svg";
 import pikachu from "../assets/img/pikachu3.svg";
@@ -66,4 +66,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
